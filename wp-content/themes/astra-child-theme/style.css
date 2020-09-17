@@ -5,7 +5,7 @@
  Author:       Emma Weiling
  Author URI:   http://emmaweiling.dk/emmaportfolio/
  Template:     astra
- Version:      1.1.0
+ Version:      2..0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -14,7 +14,13 @@
 
 
 body {
-    background-color: #F4F1E6 !important;
+    background-color: #f8f7f0 !important;
+}
+
+.tekst {
+    font-size: 75px;
+    font-family: orpheuspro;
+    color: #40009b;
 }
 
 /*ANIMATION - INSPIRATION FRA W3SCHOOLS -> https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction2*/
@@ -24,27 +30,11 @@ body {
   height: 100px;
   position: relative;
   animation-name: example;
-  animation-duration: 7s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
 @keyframes example {
-  0%   {left:0px; top:0px;}
-  50%  {left:50%; top:0px;}
-  100% {left:0px; top:0px;}
-}
-
-
-#weiling {
-  width: 100%;
-  height: 100px;
-  position: relative;
-  animation-name: example1;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example1 {
   0%   {left:0px; top:0px;}
   50%  {left:40%; top:0px;}
   100% {left:0px; top:0px;}
@@ -61,32 +51,13 @@ body {
 
 @keyframes example2 {
   0%   {left:0px; top:0px;}
-  50%  {left:20%; top:0px;}
+  50%  {left:15%; top:0px;}
   100% {left:0px; top:0px;}
 }
 
-#designer {
-  width: 100%;
-  height: 100px;
-  position: relative;
-  animation-name: example3;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example3 {
-  0%   {left:0px; top:0px;}
-  50%  {left:20%; top:0px;}
-  100% {left:0px; top:0px;}
-}
-
-.tekst {
-    font-size: 75px;
-    font-family: orpheuspro;
-}
+/*SLUT ANIMATION*/
 
 /*BOX*/
-
 #boks {
     width: 100%;
     height: 300px;
@@ -101,8 +72,15 @@ body {
     margin-top: -700px;
 }
 
+
+/*TYPED TEXT PÅ PROJEKT SIDEN*/
 .textwidget.custom-html-widget {
     font-size: 60px;
     line-height: 1;
+    color: #40009b;
 }
+
+/*MENU ÆNDRINGER*/
+a.menu-link {
+    font-size: 19px;
 
