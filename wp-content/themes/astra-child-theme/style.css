@@ -1,11 +1,11 @@
 /*
  Theme Name:   astra child theme 
- Theme URI:    http://emmaweiling.dk/emmaportfolio/astra-child-theme/
+ Theme URI:    http://portfolio.emmaweiling.dk/astra-child-theme/
  Description:  Astra Child Theme based on the parent theme Astra
  Author:       Emma Weiling
- Author URI:   http://emmaweiling.dk/emmaportfolio/
+ Author URI:   http://portfolio.emmaweiling.dk/
  Template:     astra
- Version:      2..0
+ Version:      2.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -17,70 +17,67 @@ body {
     background-color: #f8f7f0 !important;
 }
 
-.tekst {
-    font-size: 75px;
-    font-family: orpheuspro;
-    color: #40009b;
-}
-
-/*ANIMATION - INSPIRATION FRA W3SCHOOLS -> https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction2*/
-
-#emma {
-  width: 100%;
-  height: 100px;
-  position: relative;
-  animation-name: example;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example {
-  0%   {left:0px; top:0px;}
-  50%  {left:40%; top:0px;}
-  100% {left:0px; top:0px;}
-}
-
-#multimedie {
-  width: 100%;
-  height: 100px;
-  position: relative;
-  animation-name: example2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example2 {
-  0%   {left:0px; top:0px;}
-  50%  {left:15%; top:0px;}
-  100% {left:0px; top:0px;}
-}
-
-/*SLUT ANIMATION*/
-
-/*BOX*/
-#boks {
-    width: 100%;
-    height: 300px;
-    background-color: aqua;
-}
-
 .elementor-divider {
     width: 105%;
 }
 
-#flyvevideo {
-    margin-top: -700px;
-}
-
-
 /*TYPED TEXT PÅ PROJEKT SIDEN*/
 .textwidget.custom-html-widget {
-    font-size: 60px;
-    line-height: 1;
-    color: #40009b;
+  font-size: 60px;
+  line-height: 1;
+  color: #40009B;
+  padding: 10px;
+}
+
+/*TYPED TEXT PÅ FORSIDEN*/
+#type1 {
+font-size: 71px;
+margin-left: -10px;  
 }
 
 /*MENU ÆNDRINGER*/
 a.menu-link {
     font-size: 19px;
+}
+
+.main-header-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+/*GRID - FJERNER BORDER OG SKYGGE OMKRING TEKST*/
+.htmega-singleimage-gridstyle-1 .image-grid-content a.read-btn:hover {
+    border: none;
+}
+
+.htmega-singleimage-gridstyle-1 .image-grid-content a.read-btn {
+    border: none;
+}
+
+.htmega-singleimage-gridstyle-1 .image-grid-content a.read-btn:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+/*PRIKKER TIL SLIDESHOW PÅ FORSIDEN*/
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background: #cccccc; 
+}
+
+/*MOBIL ÆNDRINGER DER IKKE KUNNE LAVES I WORDPRESS*/
+@media all and (max-width: 599px) {
+  
+#type1 {
+font-size: 48px;
+}
+  
+.textwidget.custom-html-widget {
+  font-size: 36px;
+  margin-left: 40px;
+}
+}
 
